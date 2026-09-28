@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="一般社団法人 日本足つぼ健幸協会（設立準備中）。1日7時間で取得できる民間資格「足つぼ健幸セラピスト ベーシック」講座のご案内。本部：神奈川県大和市つきみ野。">
+<meta property="og:title" content="日本足つぼ健幸協会">
+<meta property="og:description" content="足から、健幸を。1日で取得できる足つぼ健幸セラピスト ベーシック講座。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<title>日本足つぼ健幸協会</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+:root{
+  --paper:#F1F4EF;
+  --surface:#FFFFFF;
+  --ink:#1D302B;
+  --ink-soft:#4E625B;
+  --line:#CBD6CF;
+  --moss:#2F5A4C;
+  --moss-tint:#DDE8E1;
+  --sun:#B9831F;
+  --sun-tint:#F6EBD2;
+  --on-moss:#F4F8F5;
+  --zone-a:#E7B85C;
+  --zone-b:#8DB9A5;
+  --zone-c:#D98F6A;
+  --foot:#FBFCFA;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --paper:#131C19;
+    --surface:#1A2622;
+    --ink:#E6EEE9;
+    --ink-soft:#A5B7AF;
+    --line:#2E3F39;
+    --moss:#7FB8A2;
+    --moss-tint:#21332D;
+    --sun:#E2B458;
+    --sun-tint:#2F2715;
+    --on-moss:#10201A;
+    --zone-a:#C99A45;
+    --zone-b:#5F8F7B;
+    --zone-c:#B8704F;
+    --foot:#22302B;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#131C19;
+  --surface:#1A2622;
+  --ink:#E6EEE9;
+  --ink-soft:#A5B7AF;
+  --line:#2E3F39;
+  --moss:#7FB8A2;
+  --moss-tint:#21332D;
+  --sun:#E2B458;
+  --sun-tint:#2F2715;
+  --on-moss:#10201A;
+  --zone-a:#C99A45;
+  --zone-b:#5F8F7B;
+  --zone-c:#B8704F;
+  --foot:#22302B;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0}
+img{max-width:100%}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Zen Kaku Gothic New","Hiragino Sans","Noto Sans JP",system-ui,sans-serif;
+  font-size:16px;
+  line-height:1.85;
+  padding-inline:20px;
+}
+.wrap{max-width:1040px;margin-inline:auto}
+h1,h2,h3{font-family:"Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho",serif;text-wrap:balance;margin:0;line-height:1.35}
+p{margin:0}
+.draft{
+  margin-block:14px 0;
+  font-size:13px;color:var(--ink-soft);
+  border:1px dashed var(--line);border-radius:6px;
+  padding:6px 12px;text-align:center;
+}
+header.top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-block:18px;flex-wrap:wrap}
+.brand{font-family:"Shippori Mincho B1",serif;font-weight:800;font-size:17px;letter-spacing:.04em}
+.brand small{display:block;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:500;font-size:11px;color:var(--ink-soft);letter-spacing:.12em}
+nav.links{display:flex;gap:18px;font-size:14px;flex-wrap:wrap}
+nav.links a{color:var(--ink);text-decoration:none;border-bottom:1px solid transparent}
+nav.links a:hover,nav.links a:focus-visible{border-bottom-color:var(--sun)}
+a:focus-visible,.btn:focus-visible{outline:2px solid var(--sun);outline-offset:3px}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.25fr 1fr;gap:40px;align-items:center;padding-block:36px 56px}
+.eyebrow{font-size:13px;letter-spacing:.18em;color:var(--moss);font-weight:700}
+.hero h1{font-size:clamp(38px,6.4vw,68px);font-weight:800;margin-block:14px 18px;letter-spacing:.02em}
+.hero h1 em{font-style:normal;color:var(--sun)}
+.hero .lead{color:var(--ink-soft);max-width:34em}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:700;text-decoration:none;font-size:15px}
+.btn.primary{background:var(--moss);color:var(--on-moss)}
+.btn.ghost{color:var(--moss);border:1.5px solid var(--moss)}
+.map{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px 16px 14px}
+.map svg{display:block;width:100%;height:auto;max-width:320px;margin-inline:auto}
+.map figcaption{font-size:12px;color:var(--ink-soft);text-align:center;margin-top:6px}
+.map text{font-size:11px;fill:var(--ink);font-family:"Zen Kaku Gothic New",sans-serif}
+
+section{padding-block:56px;border-top:1px solid var(--line)}
+.sec-label{font-size:12px;letter-spacing:.2em;color:var(--moss);font-weight:700;margin-bottom:8px}
+section h2{font-size:clamp(26px,3.6vw,36px);font-weight:800;margin-bottom:18px}
+.prose{max-width:40em;color:var(--ink-soft)}
+.prose strong{color:var(--ink)}
+
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:32px}
+.pillars h3{font-size:19px;margin-bottom:6px}
+.pillars p{font-size:15px;color:var(--ink-soft)}
+.pillars .kanji{font-family:"Shippori Mincho B1",serif;font-size:40px;color:var(--sun);line-height:1;margin-bottom:10px}
+
+/* course */
+.course{display:grid;grid-template-columns:1fr 1.15fr;gap:40px;align-items:start}
+.course-card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:28px}
+.cert-name{font-family:"Shippori Mincho B1",serif;font-size:22px;font-weight:800}
+.badge{display:inline-block;font-size:12px;background:var(--sun-tint);color:var(--sun);font-weight:700;padding:2px 10px;border-radius:999px;margin-bottom:10px}
+.price{margin-block:18px 6px;font-family:"Shippori Mincho B1",serif;font-weight:800;font-size:44px;line-height:1;font-variant-numeric:tabular-nums}
+.price span{font-size:16px;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:500;color:var(--ink-soft);margin-left:6px}
+.note{font-size:13px;color:var(--ink-soft)}
+dl.spec{display:grid;grid-template-columns:auto 1fr;gap:10px 18px;margin:22px 0 0;font-size:15px}
+dl.spec dt{color:var(--ink-soft)}
+dl.spec dd{margin:0;font-weight:500}
+.goal{margin-top:22px;background:var(--moss-tint);border-radius:12px;padding:14px 16px;font-size:15px}
+.goal b{color:var(--moss)}
+
+.timeline{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.timeline li{display:grid;grid-template-columns:62px 1fr;gap:14px;padding-block:12px;border-bottom:1px dashed var(--line)}
+.timeline li:last-child{border-bottom:0}
+.timeline time{font-variant-numeric:tabular-nums;font-weight:700;color:var(--moss);font-size:15px}
+.timeline .t{font-weight:700;font-size:15px}
+.timeline .d{font-size:14px;color:var(--ink-soft)}
+.timeline li.exam .t{color:var(--sun)}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:28px;counter-reset:s}
+.step{padding:18px 14px 16px;border-left:1px solid var(--line);position:relative}
+.step:first-child{border-left:0}
+.step .lv{font-size:12px;color:var(--ink-soft);letter-spacing:.1em}
+.step h3{font-size:17px;margin-block:4px 6px}
+.step p{font-size:13.5px;color:var(--ink-soft);line-height:1.7}
+.step.now{background:var(--sun-tint);border-radius:12px;border-left-color:transparent}
+.step.now + .step{border-left-color:transparent}
+.step .tag{font-size:11px;font-weight:700;color:var(--sun)}
+.step .soon{font-size:11px;color:var(--ink-soft)}
+
+/* faq */
+.faq{max-width:760px;display:grid;gap:10px}
+.faq details{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 18px}
+.faq summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"＋";color:var(--moss)}
+.faq details[open] summary::after{content:"－"}
+.faq details p{margin-top:10px;color:var(--ink-soft);font-size:15px}
+
+/* access */
+.access{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+.access dl{display:grid;grid-template-columns:auto 1fr;gap:10px 18px;margin:0;font-size:15px}
+.access dt{color:var(--ink-soft)}
+.access dd{margin:0}
+.contact{background:var(--moss);color:var(--on-moss);border-radius:18px;padding:28px}
+.contact h3{font-size:22px;margin-bottom:8px}
+.contact p{font-size:15px;opacity:.9}
+.contact .btn{background:var(--on-moss);color:var(--moss);margin-top:18px}
+
+footer{border-top:1px solid var(--line);padding-block:28px 40px;font-size:13px;color:var(--ink-soft);display:grid;gap:8px}
+footer .flinks{display:flex;gap:16px;flex-wrap:wrap}
+footer a{color:var(--ink-soft)}
+
+@media (max-width:860px){
+  .hero,.course,.access{grid-template-columns:1fr}
+  .pillars{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .step{border-left:0;border-top:1px solid var(--line)}
+  .step:first-child{border-top:0}
+  .step.now + .step{border-top-color:transparent}
+  nav.links{display:none}
+}
+@media (prefers-reduced-motion:no-preference){
+  .zone{transition:opacity .2s}
+  .map:hover .zone{opacity:.55}
+  .map:hover .zone:hover{opacity:1}
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <p class="draft">この協会は設立準備中です。掲載内容は案であり、確定前に変更される場合があります。</p>
+
+  <header class="top">
+    <div class="brand">日本足つぼ健幸協会<small>JAPAN ASHITSUBO KENKOU ASSOCIATION</small></div>
+    <nav class="links" aria-label="ページ内リンク">
+      <a href="#about">協会について</a>
+      <a href="#course">資格講座</a>
+      <a href="#steps">資格の段階</a>
+      <a href="#faq">よくある質問</a>
+      <a href="#access">本部</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div>
+      <p class="eyebrow">一般社団法人 日本足つぼ健幸協会</p>
+      <h1>足から、<br><em>健幸</em>を。</h1>
+      <p class="lead">足の裏には、全身とつながる反射区があります。日本足つぼ健幸協会は、足つぼの確かな技術を学べる場をつくり、施術する人とされる人、両方の毎日を健やかで幸せにすることを目指します。</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#course">ベーシック講座を見る</a>
+        <a class="btn ghost" href="#about">協会について</a>
+      </div>
+    </div>
+    <figure class="map" style="margin:0">
+      <svg viewBox="0 0 220 340" role="img" aria-label="右足の足裏と主な反射区の図">
+        <path d="M110 12c-30 0-52 14-60 44-8 30-6 62 0 92 6 32 4 58-2 86-6 30-6 60 10 80 14 18 34 22 52 22s38-4 52-22c16-20 16-50 10-80-6-28-8-54-2-86 6-30 8-62 0-92-8-30-30-44-60-44z" fill="var(--foot)" stroke="var(--ink-soft)" stroke-width="1.5"/>
+        <ellipse class="zone" cx="110" cy="50" rx="44" ry="30" fill="var(--zone-a)" opacity=".85"/>
+        <rect class="zone" x="66" y="92" width="88" height="26" rx="13" fill="var(--zone-b)" opacity=".85"/>
+        <ellipse class="zone" cx="110" cy="160" rx="42" ry="30" fill="var(--zone-c)" opacity=".8"/>
+        <rect class="zone" x="68" y="206" width="84" height="44" rx="18" fill="var(--zone-b)" opacity=".7"/>
+        <ellipse class="zone" cx="110" cy="298" rx="38" ry="24" fill="var(--zone-a)" opacity=".75"/>
+        <text x="110" y="54" text-anchor="middle">頭部</text>
+        <text x="110" y="109" text-anchor="middle">肩・首</text>
+        <text x="110" y="164" text-anchor="middle">胃・肝臓</text>
+        <text x="110" y="232" text-anchor="middle">腸</text>
+        <text x="110" y="302" text-anchor="middle">腰・下半身</text>
+      </svg>
+      <figcaption>足裏の主な反射区（簡略図）</figcaption>
+    </figure>
+  </div>
+
+  <section id="about">
+    <p class="sec-label">ABOUT</p>
+    <h2>協会について</h2>
+    <p class="prose">神奈川県大和市つきみ野のフット&amp;ボディサロン「足から健幸」を本部に、足つぼの技術と考え方を広めるために設立する協会です。サロンの現場で積み重ねてきた施術を、<strong>だれもが同じ品質で学べる講座</strong>にまとめ、協会認定の民間資格として発行します。</p>
+    <div class="pillars">
+      <div>
+        <div class="kanji">学</div>
+        <h3>現場の技術を学ぶ</h3>
+        <p>本部サロンで実際に提供している手順をもとにした、実技中心のカリキュラムです。</p>
+      </div>
+      <div>
+        <div class="kanji">安</div>
+        <h3>安全を最優先に</h3>
+        <p>施術してはいけない方や部位、衛生管理、健康に関する正しい伝え方まで身につけます。</p>
+      </div>
+      <div>
+        <div class="kanji">繋</div>
+        <h3>学んだ後もつながる</h3>
+        <p>認定セラピスト同士の勉強会や、上位資格への道筋を用意します。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="course">
+    <p class="sec-label">COURSE</p>
+    <h2>足つぼ健幸セラピスト ベーシック講座</h2>
+    <div class="course">
+      <div class="course-card">
+        <span class="badge">1日で資格取得</span>
+        <div class="cert-name">足つぼ健幸セラピスト ベーシック</div>
+        <div class="price">80,000<span>円（税込）</span></div>
+        <p class="note">受講料・テキスト・認定試験・認定証発行をすべて含みます</p>
+        <dl class="spec">
+          <dt>受講時間</dt><dd>1日7時間（10:00〜18:00、昼休み1時間）</dd>
+          <dt>定員</dt><dd>1〜4名の少人数制</dd>
+          <dt>受講資格</dt><dd>なし（未経験の方も歓迎）</dd>
+          <dt>会場</dt><dd>足から健幸 つきみ野店</dd>
+          <dt>持ち物</dt><dd>動きやすい服装、筆記用具</dd>
+        </dl>
+        <p class="goal"><b>修了時の目安</b><br>足裏から足首まで、45分の基本コースを一人で最後まで施術できるようになります。</p>
+      </div>
+      <div>
+        <ol class="timeline" aria-label="当日のタイムテーブル">
+          <li><time>10:00</time><div><div class="t">オリエンテーション</div><div class="d">協会の理念「足から健幸」</div></div></li>
+          <li><time>10:15</time><div><div class="t">足つぼの基礎知識</div><div class="d">反射区の考え方、足の骨格と筋肉、反射区マップ</div></div></li>
+          <li><time>11:00</time><div><div class="t">安全と法令</div><div class="d">施術してはいけない方と部位、衛生管理、伝え方のルール</div></div></li>
+          <li><time>11:30</time><div><div class="t">基本手技</div><div class="d">母指圧・示指関節圧・さすり、力加減の練習</div></div></li>
+          <li><time>13:00</time><div><div class="t">45分コースの手順①</div><div class="d">足浴、足首・ふくらはぎ、足裏（頭部〜内臓）</div></div></li>
+          <li><time>14:40</time><div><div class="t">45分コースの手順②</div><div class="d">足裏（背骨・下半身）、足の甲・側面、仕上げ</div></div></li>
+          <li><time>15:40</time><div><div class="t">カウンセリング</div><div class="d">問診票の使い方、声かけ、アフターアドバイス</div></div></li>
+          <li><time>16:20</time><div><div class="t">通し練習</div><div class="d">45分コースを一人で施術、講師が個別に指導</div></div></li>
+          <li class="exam"><time>17:20</time><div><div class="t">認定試験・認定証授与</div><div class="d">筆記10問と実技チェック</div></div></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="steps">
+    <p class="sec-label">STEPS</p>
+    <h2>資格の段階</h2>
+    <p class="prose">ベーシックから順に、施術の幅を広げ、指導者を目指せる段階を用意する予定です。</p>
+    <div class="steps">
+      <div class="step"><div class="lv">入門</div><h3>アドバイザー</h3><p>セルフケアとご家族へのケア</p><span class="soon">準備中</span></div>
+      <div class="step now"><div class="lv">基本</div><h3>セラピスト ベーシック</h3><p>45分の基本コースを一人で施術</p><span class="tag">受付予定</span></div>
+      <div class="step"><div class="lv">上級</div><h3>セラピスト 1級</h3><p>お客様に合わせてコースを組み立てる</p><span class="soon">準備中</span></div>
+      <div class="step"><div class="lv">指導者</div><h3>インストラクター</h3><p>協会の講座を教えられる</p><span class="soon">準備中</span></div>
+      <div class="step"><div class="lv">最高位</div><h3>マスター</h3><p>認定講師を育てる</p><span class="soon">準備中</span></div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <p class="sec-label">FAQ</p>
+    <h2>よくある質問</h2>
+    <div class="faq">
+      <details><summary>まったくの未経験でも受講できますか？</summary><p>はい、できます。少人数制で、講師が一人ひとりの手の動きを確認しながら進めます。</p></details>
+      <details><summary>国家資格ですか？</summary><p>いいえ、当協会が認定する民間資格です。医療行為や治療を行うための資格ではありません。</p></details>
+      <details><summary>1日で本当に施術できるようになりますか？</summary><p>基本の45分コースを一人で最後まで行えるところまで練習します。認定後は、ご家族や知人への施術で経験を重ねることをおすすめしています。</p></details>
+      <details><summary>試験に合格できなかった場合は？</summary><p>後日、実技の再チェック（30分）を無料で1回受けていただけます。</p></details>
+      <details><summary>キャンセルはできますか？</summary><p>7日前までは全額返金、3日前までは50%返金、前日・当日は返金なしを予定しています（日程の振替は1回可）。</p></details>
+    </div>
+  </section>
+
+  <section id="access">
+    <p class="sec-label">ACCESS</p>
+    <h2>本部・講座会場</h2>
+    <div class="access">
+      <dl>
+        <dt>名称</dt><dd>足から健幸 つきみ野店</dd>
+        <dt>住所</dt><dd>〒242-0002<br>神奈川県大和市つきみ野5丁目12-11</dd>
+        <dt>アクセス</dt><dd>東急田園都市線 つきみ野駅から徒歩5分</dd>
+        <dt>駐車場</dt><dd>あり（無料）</dd>
+      </dl>
+      <div class="contact">
+        <h3>受講のお申し込み</h3>
+        <p>講座の開講日程とお申し込み方法は、協会の設立後にこのページでお知らせします。</p>
+        <a class="btn" href="https://www.instagram.com/ashikara.kenkou.tsukimino/" target="_blank" rel="noopener">本部サロンのInstagram</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="flinks"><span>特定商取引法に基づく表記（準備中）</span><span>プライバシーポリシー（準備中）</span></div>
+    <div>本協会の資格は民間資格です。施術は病気の診断・治療を目的とするものではありません。</div>
+    <div>© 一般社団法人 日本足つぼ健幸協会（設立準備中）</div>
+  </footer>
+</div>
+</body>
+</html>
